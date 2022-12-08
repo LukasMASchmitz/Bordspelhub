@@ -10946,19 +10946,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lukas\\.nuget\\packages\\": {}
+    "C:\\Users\\Pepijn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+      "projectUniqueName": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
       "projectName": "Bordspelhub",
-      "projectPath": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
-      "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\obj\\",
+      "projectPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+      "packagesPath": "C:\\Users\\Pepijn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pepijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
