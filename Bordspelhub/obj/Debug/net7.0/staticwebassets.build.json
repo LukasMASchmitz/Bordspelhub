@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ofupDfTBSAr39kG4a6Vy6ldrsP+Ys2PjD2BhxG97xTo=",
+  "Hash": "uVtBZesSSX4IffJCTAB1Gz++drtWkcfMtmf7lMujlTI=",
   "Source": "Bordspelhub",
   "BasePath": "_content/Bordspelhub",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Bordspelhub.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\css\\signin.css",
+      "SourceId": "Bordspelhub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\",
+      "BasePath": "_content/Bordspelhub",
+      "RelativePath": "css/signin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\signin.css"
     },
     {
       "Identity": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\css\\site.css",
