@@ -13,23 +13,27 @@
     <main class="form-signin w-100 m-auto">
         <form>
 
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <h1 class="h3 mb-3 fw-normal">Account registreren</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="naam@voorbeeld.com">
+                <label for="floatingInput">Email adres</label>
             </div>
             <div class="form-floating">
     
-                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <label for="exampleInputEmail1">Password</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="wachtwoord">
+                <label for="exampleInputEmail1">Wachtwoord</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm password">
-                <label for="floatingPassword">Confirm password</label>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Wachtwoord bevestigen">
+                <label for="floatingPassword">Wachtwoord bevestigen</label>
             </div>
             
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Registreren</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+
+            <h1 class="h5 mb-3 fw-normal " style="margin-top:40px">Heeft u al een account?</h1>
+            <a class="w-100 btn btn-lg btn-primary" id="login" asp-area="Identity" asp-page="/Account/Login">Inloggen</a>
             <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
 
         </form>
