@@ -3,21 +3,30 @@
 }
 <h1>Zoek</h1>
 
+<input type="search" class="form-control" id="datatable-search-input">
+
+
+<hr class="my-4">
+
 
 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:right">
         <div class ="col p-4 d-flex flex-column position-static">
             <h1>Zoekfuncties</h1>
+            <hr class="my-4">
             <div >
                 <label for="sortop" class="form-label">Sorteren op:</label>
                     <select class="form-select" id="Nieuw naar oud" required="">
-                    <option value="">Standaard</option>
+                    <option value="">Populairst</option>
                     <option>Nieuw naar oud</option>
                     <option>Oud naar nieuw</option>
-                    <option>Populairst</option>
+                    
                 </select>
                 <div class="invalid-feedback">
                     Please select a valid country.
                 </div>
+                <hr class="my-4">
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Zoeken</button>
+
             </div>
         </div>
     </div>    
@@ -26,9 +35,9 @@
 @for (int i = 0; i < 5; i++)
 {
 
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:left;width:60%">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:left;width:70%">
         <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: tekst" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"> Placeholder</text></svg>
+            <svg class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:image" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"> </text></svg>
 
         </div>
         <div class="col p-4 d-flex flex-column position-static">
@@ -43,6 +52,6 @@
 
 }
 
-
+<div style="clear:both"></div>
 
             
