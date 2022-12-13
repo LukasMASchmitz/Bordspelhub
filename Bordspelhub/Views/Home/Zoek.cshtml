@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>Zoek</h1>
+
+
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:right">
+        <div class ="col p-4 d-flex flex-column position-static">
+            <h1>Zoekfuncties</h1>
+            <div >
+                <label for="sortop" class="form-label">Sorteren op:</label>
+                    <select class="form-select" id="Nieuw naar oud" required="">
+                    <option value="">Standaard</option>
+                    <option>Nieuw naar oud</option>
+                    <option>Oud naar nieuw</option>
+                    <option>Populairst</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+@for (int i = 0; i < 5; i++)
+{
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:left;width:60%">
+        <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: tekst" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"> Placeholder</text></svg>
+
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Spelnaam</h3>
+            <div class="mb-1 text-muted">Datum uitgekomen</div>
+            <p class="mb-auto">Beschrijving Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+            <a href="#" class="stretched-link">Meer info</a>
+        </div>
+        
+    </div>
+    
+
+}
+
+
+
+            

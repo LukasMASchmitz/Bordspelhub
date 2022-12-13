@@ -18,6 +18,11 @@ namespace Bordspelhub.Controllers
             return View();
         }
 
+        public IActionResult Zoek()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
