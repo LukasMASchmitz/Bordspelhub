@@ -7,18 +7,47 @@
         <h1>Spel toevoegen</h1>
     </div>
 <hr class="my-4">
-    <div class="w-40 m-4" style="float:left;width:40%">
-              <label for="address" class="form-label">Naam</label>
+    <div class="w-50 m-4" style="float:left;width:40%">
+              <label class="form-label" for="customFile">Foto toevoegen</label>
+                <input type="file" class="form-control" id="customFile" />
+
+              
+            </div>
+   
+            <div class="w-40 m-4" style="float:left;width:40%"> 
+            
+
+             <label for="address" class="form-label">Naam</label>
               <input type="text" class="form-control" id="address" placeholder="Spelnaam" required="">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
-            </div>
-   
-            <div class="w-40 m-4" style="float:left;width:40%"> 
-            <label class="form-label" for="customFile">Foto toevoegen</label>
-            <input type="file" class="form-control" id="customFile" />
+              <br />
+              <label for="sortop" class="form-label">Caterogie</label>
+                    <select class="form-select" id="Nieuw naar oud" required="">
+                <option value="">Automa</option>
+                        <option>Breinbrekers</option>
+                        <option>Casual spellen</option>
+                        <option>Cooperatieve spellen</option>
+                        <option>Deck builders</option>
+                        <option>Engine builders</option>
+                        <option>Escape room-spellen</option>
+                        <option>Expertspellen of Strategisch spellen</option>
+                        <option>Gateway-spellen</option>
+                        <option>Legacy-spellen</option>
+            </select>
+            <br />
+
+            <div class="form-group">
+        <label for="exampleFormControlTextarea1">Beschrijving</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+        
+        </div>
+
     </div>
+
     
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Toevoegen</button>
 </div>
+
+<button class="w-100 btn btn-lg btn-primary" type="submit">Toevoegen</button>
