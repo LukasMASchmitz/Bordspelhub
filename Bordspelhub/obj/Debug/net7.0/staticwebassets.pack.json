@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Bordspelhub.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\Pics\\Back.jpg",
+      "PackagePath": "staticwebassets\\Pics\\Back.jpg"
+    },
+    {
       "Id": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\css\\signin.css",
       "PackagePath": "staticwebassets\\css\\signin.css"
     },

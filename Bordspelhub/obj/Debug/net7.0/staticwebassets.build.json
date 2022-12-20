@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uVtBZesSSX4IffJCTAB1Gz++drtWkcfMtmf7lMujlTI=",
+  "Hash": "HpnhlWt0skd1gRPWV0IUF2kV0Q2Bp1qB3+A4JwWNNB8=",
   "Source": "Bordspelhub",
   "BasePath": "_content/Bordspelhub",
   "Mode": "Default",
@@ -2106,6 +2106,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\Pics\\Back.jpg",
+      "SourceId": "Bordspelhub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\wwwroot\\",
+      "BasePath": "_content/Bordspelhub",
+      "RelativePath": "Pics/Back.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pics\\Back.jpg"
     }
   ]
 }

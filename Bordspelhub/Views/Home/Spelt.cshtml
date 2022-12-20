@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div>
+    <div class=" m-auto align-items-center" >
+        <h1>Spel toevoegen</h1>
+    </div>
+<hr class="my-4">
+    <div class="w-40 m-4" style="float:left;width:40%">
+              <label for="address" class="form-label">Naam</label>
+              <input type="text" class="form-control" id="address" placeholder="Spelnaam" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+   
+            <div class="w-40 m-4" style="float:left;width:40%"> 
+            <label class="form-label" for="customFile">Foto toevoegen</label>
+            <input type="file" class="form-control" id="customFile" />
+    </div>
+    
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Toevoegen</button>
+</div>

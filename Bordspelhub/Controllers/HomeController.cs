@@ -23,6 +23,11 @@ namespace Bordspelhub.Controllers
             return View();
         }
 
+        public IActionResult Spelt()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
