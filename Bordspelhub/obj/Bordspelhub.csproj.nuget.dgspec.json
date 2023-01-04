@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
+    "C:\\Users\\HP\\source\\repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
         "projectName": "Bordspelhub",
-        "projectPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
-        "packagesPath": "C:\\Users\\Pepijn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\obj\\",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\Bordspelhub\\Bordspelhub\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Pepijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,29 +47,29 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -86,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

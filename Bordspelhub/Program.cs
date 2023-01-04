@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Bordspelhub.Data;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("BordspelhubContextConnection") ?? throw new InvalidOperationException("Connection string 'BordspelhubContextConnection' not found.");
 
 builder.Services.AddDbContext<BordspelhubContext>(options => options.UseSqlServer(connectionString));
+
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<BordspelhubContext>();
 

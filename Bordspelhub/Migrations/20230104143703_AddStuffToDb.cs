@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Bordspelhub.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateIdentitySchema : Migration
+    public partial class AddStuffToDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -48,6 +48,38 @@ namespace Bordspelhub.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Evenementen",
+                columns: table => new
+                {
+                    EvenementId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EvenementNaam = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EvenementLocatie = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EvenementThema = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EvenementDeelnemers = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Evenementen", x => x.EvenementId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Gebruikers",
+                columns: table => new
+                {
+                    GebruikerId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    GebruikerNaam = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GebruikerEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GebruikerLeeftijd = table.Column<int>(type: "int", nullable: false),
+                    GebruikerGeslacht = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Gebruikers", x => x.GebruikerId);
                 });
 
             migrationBuilder.CreateTable(
@@ -156,6 +188,52 @@ namespace Bordspelhub.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "EvenementGebruiker",
+                columns: table => new
+                {
+                    EvenementenEvenementId = table.Column<int>(type: "int", nullable: false),
+                    GebruikersGebruikerId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EvenementGebruiker", x => new { x.EvenementenEvenementId, x.GebruikersGebruikerId });
+                    table.ForeignKey(
+                        name: "FK_EvenementGebruiker_Evenementen_EvenementenEvenementId",
+                        column: x => x.EvenementenEvenementId,
+                        principalTable: "Evenementen",
+                        principalColumn: "EvenementId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_EvenementGebruiker_Gebruikers_GebruikersGebruikerId",
+                        column: x => x.GebruikersGebruikerId,
+                        principalTable: "Gebruikers",
+                        principalColumn: "GebruikerId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Spellen",
+                columns: table => new
+                {
+                    SpelId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SpelNaam = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SpelCategorie = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SpelLeeftijdsCategorie = table.Column<int>(type: "int", nullable: false),
+                    SpelBeschrijving = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GebruikerId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Spellen", x => x.SpelId);
+                    table.ForeignKey(
+                        name: "FK_Spellen_Gebruikers_GebruikerId",
+                        column: x => x.GebruikerId,
+                        principalTable: "Gebruikers",
+                        principalColumn: "GebruikerId");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -194,6 +272,16 @@ namespace Bordspelhub.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EvenementGebruiker_GebruikersGebruikerId",
+                table: "EvenementGebruiker",
+                column: "GebruikersGebruikerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Spellen_GebruikerId",
+                table: "Spellen",
+                column: "GebruikerId");
         }
 
         /// <inheritdoc />
@@ -215,10 +303,22 @@ namespace Bordspelhub.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "EvenementGebruiker");
+
+            migrationBuilder.DropTable(
+                name: "Spellen");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Evenementen");
+
+            migrationBuilder.DropTable(
+                name: "Gebruikers");
         }
     }
 }

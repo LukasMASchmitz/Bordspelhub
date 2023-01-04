@@ -17,10 +17,114 @@ namespace Bordspelhub.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0")
+                .HasAnnotation("ProductVersion", "7.0.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Bordspelhub.Models.Evenement", b =>
+                {
+                    b.Property<int>("EvenementId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EvenementId"));
+
+                    b.Property<int>("EvenementDeelnemers")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EvenementLocatie")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EvenementNaam")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EvenementThema")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EvenementId");
+
+                    b.ToTable("Evenementen");
+                });
+
+            modelBuilder.Entity("Bordspelhub.Models.Gebruiker", b =>
+                {
+                    b.Property<int>("GebruikerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GebruikerId"));
+
+                    b.Property<string>("GebruikerEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GebruikerGeslacht")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GebruikerLeeftijd")
+                        .HasColumnType("int");
+
+                    b.Property<string>("GebruikerNaam")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GebruikerId");
+
+                    b.ToTable("Gebruikers");
+                });
+
+            modelBuilder.Entity("Bordspelhub.Models.Spel", b =>
+                {
+                    b.Property<int>("SpelId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SpelId"));
+
+                    b.Property<int?>("GebruikerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SpelBeschrijving")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SpelCategorie")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SpelLeeftijdsCategorie")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SpelNaam")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SpelId");
+
+                    b.HasIndex("GebruikerId");
+
+                    b.ToTable("Spellen");
+                });
+
+            modelBuilder.Entity("EvenementGebruiker", b =>
+                {
+                    b.Property<int>("EvenementenEvenementId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GebruikersGebruikerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EvenementenEvenementId", "GebruikersGebruikerId");
+
+                    b.HasIndex("GebruikersGebruikerId");
+
+                    b.ToTable("EvenementGebruiker");
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -224,6 +328,28 @@ namespace Bordspelhub.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Bordspelhub.Models.Spel", b =>
+                {
+                    b.HasOne("Bordspelhub.Models.Gebruiker", null)
+                        .WithMany("Spellen")
+                        .HasForeignKey("GebruikerId");
+                });
+
+            modelBuilder.Entity("EvenementGebruiker", b =>
+                {
+                    b.HasOne("Bordspelhub.Models.Evenement", null)
+                        .WithMany()
+                        .HasForeignKey("EvenementenEvenementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bordspelhub.Models.Gebruiker", null)
+                        .WithMany()
+                        .HasForeignKey("GebruikersGebruikerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -273,6 +399,11 @@ namespace Bordspelhub.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Bordspelhub.Models.Gebruiker", b =>
+                {
+                    b.Navigation("Spellen");
                 });
 #pragma warning restore 612, 618
         }
