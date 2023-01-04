@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<body background="~/wwwroot/Pics/Back.jpg">
+    <input type="search" class="form-control" id="datatable-search-input" placeholder="Zoek">
+
+
+    <hr class="my-4">
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:right">
+        <div class="col p-4 d-flex flex-column position-static">
+            <h1>Zoekfuncties</h1>
+            <hr class="my-4">
+            <div>
+                <label for="sortop" class="form-label">Sorteren op:</label>
+                <select class="form-select" id="Nieuw naar oud" required="">
+                    <option value="">Populairst</option>
+                    <option>Nieuw naar oud</option>
+                    <option>Oud naar nieuw</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+                <hr class="my-4">
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Zoeken</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    @for (int i = 0; i < 5; i++)
+    {
+
+        <div class="card" style="width:75%">
+            
+            <div class="row">
+                <p class="text-secondary">Question by: Username</p>
+                <p>Beschrijving Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+            </div>
+            <div class="row lower">
+                <div class="col">
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a> <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</body>
