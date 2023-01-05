@@ -18,7 +18,12 @@ namespace Bordspelhub.Controllers
             return View();
         }
 
-        public IActionResult Spel()
+        public IActionResult Spellen()
+        {
+            return View();
+        }
+
+        public IActionResult Spel() 
         {
             return View();
         }
