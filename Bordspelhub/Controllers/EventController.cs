@@ -8,5 +8,11 @@ namespace Bordspelhub.Controllers
         {
             return View();
         }
+
+
+        public IActionResult Eventt()
+        {
+            return View();
+        }
     }
 }
