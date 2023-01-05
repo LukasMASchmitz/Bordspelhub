@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Bordspelhub.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,4 +19,9 @@ public class BordspelhubContext : IdentityDbContext<IdentityUser>
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
     }
+
+    public DbSet<Comment> Comments { get; set; }
+    public DbSet<Spel> Spellen { get; set; }
+    public DbSet<Evenement> Evenementen { get; set; }
+    public DbSet<Forum> Forums { get; set; }
 }
