@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<div>
+    <div class=" m-auto align-items-center">
+        <h1>Event toevoegen</h1>
+    </div>
+    <hr class="my-4">
+    <div class="w-50 m-4" style="float:left;width:40%">
+        <label class="form-label" for="customFile">Foto toevoegen</label>
+        <input type="file" class="form-control" id="customFile" />
+
+
+    </div>
+
+    <div class="w-40 m-4" style="float:left;width:40%">
+
+
+        <label for="address" class="form-label">Naam</label>
+        <input type="text" class="form-control" id="address" placeholder="Spelnaam" required="">
+
+        <label for="Datum" class="form-label">Datum</label>
+        <input type="text" class="form-control" id="Datum" placeholder="DD-MM-JJJJ" required="">
+
+        <label for="Locatie" class="form-label">Locatie</label>
+        <input type="text" class="form-control" id="Locatie" placeholder="Locatie" required="">
+
+        <label for="URL" class="form-label">URL website</label>
+        <input type="text" class="form-control" id="URL" placeholder="URL" required="">
+
+        <div class="invalid-feedback">
+            Please enter your shipping address.
+        </div>
+        <br />
+        
+        
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Beschrijving</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<button class="w-100 btn btn-lg btn-primary" type="submit">Toevoegen</button>
