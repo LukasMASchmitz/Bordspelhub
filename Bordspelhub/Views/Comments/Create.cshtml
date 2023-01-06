@@ -1,0 +1,38 @@
+﻿@model Bordspelhub.Models.Comment
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="px-4 py-5 my-5 text-center">
+    <div class="col-lg-6 mx-auto">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CommentText" class="control-label h3">Leave a reply:</label>
+                <textarea asp-for="CommentText" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="CommentText" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="Gebruiker" class="control-label"></label>
+                <input asp-for="Gebruiker" value="@UserManager.GetUserName(User)" class="form-control" />
+                <span asp-validation-for="Gebruiker" class="text-danger"></span>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" style="margin-top:3%">
+                <input type="submit" value="Create" class="btn btn-primary mb-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -4,18 +4,18 @@
 @{
 }
 
+@using Bordspelhub.Models
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
 <main class="container">
-    <div class="px-4 py-5 my-5 text-center">
-        <div class="col-lg-6 mx-auto">
-            <div class="mb-3">
-                <h3>Leave a reply:</h3>
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="submit" class="btn btn-primary mb-3">Send</button>
-            </div>
-        </div>
+
+
+
+    <div class="row">
+        <p><a class="btn btn-secondary align-self-center" asp-area="" asp-controller="Home" asp-action="Spelt">View details »</a></p>
     </div>
 
     <div class="card">
@@ -38,4 +38,29 @@
             </div>
         </div>
     </div>
+
+    @foreach (var obj in Model)
+    {
+        <div class="card">
+
+            <div class="row">
+                <div class="col-2 text-center align-self-left">
+                    <h4>Username</h4>
+                </div>
+                <div class="col-10">
+                    <p>Beschrijving Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                </div>
+            </div>
+            <div class="row lower">
+                <div class="col">
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a> <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    
 </main>
