@@ -16,7 +16,7 @@ namespace Bordspelhub.Models
         [Required] 
         public string URL { get; set; }
         [Required]
-        public int Gebruiker { get; set; }
+        public string Creator { get; set; }
         public string Beschrijving { get; set; }
     }
 }

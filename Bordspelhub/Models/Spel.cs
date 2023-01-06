@@ -11,7 +11,7 @@ namespace Bordspelhub.Models
         [Required]
         public string SpelNaam { get; set;}
         [Required]
-        public int Gebruiker { get; set;}
+        public string Gebruiker { get; set;}
         public string Categorie { get; set; }
         public int Pegi { get; set; }
         public string Beschrijving { get; set; }
