@@ -12,7 +12,7 @@ namespace Bordspelhub.Models
         [Required]
         public string Onderwerp { get; set; }
         [Required]
-        public int Gebruiker { get; set; }
+        public string Owner { get; set; }
         public Spel? Spel { get; set; }
         public Evenement? Evenement { get; set; }
     }

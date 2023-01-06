@@ -12,6 +12,6 @@ namespace Bordspelhub.Models
         [Required]
         public Forum Forum { get; set; }
         [Required]
-        public int Gebruiker { get; set; }
+        public string Commenter { get; set; }
     }
 }
