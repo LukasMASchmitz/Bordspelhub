@@ -5,12 +5,13 @@ namespace Bordspelhub.Models
 {
     public class Comment
     {
+        
         [Key]
         public int CommentId { get; set; }
         [Required]
         public string CommentText { get; set; }
-        [Required]
-        public Forum Forum { get; set; }
+        [ForeignKey("Forum")]
+        public int ForumId { get; set; }
         [Required]
         public string Commenter { get; set; }
     }
