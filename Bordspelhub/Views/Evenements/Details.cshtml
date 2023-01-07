@@ -4,49 +4,21 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+
 
 <div>
-    <h4>Evenement</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EvenementNaam)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EvenementNaam)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Locatie)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Locatie)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EvenementDatum)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EvenementDatum)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.URL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.URL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Creator)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Creator)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Beschrijving)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Beschrijving)
-        </dd>
-    </dl>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background-image:'@Html.DisplayNameFor(model => model.URL)'">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">@Html.DisplayFor(model => model.EvenementNaam)</h1>
+            <p class="lead fw-normal">datum: @Html.DisplayFor(model => model.EvenementDatum)</p>
+            <p class="lead fw-normal">@Html.DisplayFor(model => model.Beschrijving)</p>
+            <p class="lead fw-normal">@Html.DisplayFor(model => model.Locatie)</p>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <p class="lead fw-normal">@Html.DisplayFor(model => model.Creator)</p>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.EvenementId">Edit</a> |

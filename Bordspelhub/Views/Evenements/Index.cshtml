@@ -4,62 +4,59 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EvenementNaam)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Locatie)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EvenementDatum)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.URL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Creator)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Beschrijving)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EvenementNaam)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Locatie)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EvenementDatum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.URL)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Creator)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Beschrijving)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.EvenementId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.EvenementId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.EvenementId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<main>
+
+
+    @if (Model.Count() != 0)
+    {
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">@Model.FirstOrDefault().EvenementNaam</h1>
+                <p class="lead fw-normal">datum: @Model.FirstOrDefault().EvenementDatum</p>
+                <p class="lead fw-normal">@Model.FirstOrDefault().Beschrijving</p>
+                <a class="btn btn-outline-secondary" href="#">Meer informatie</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+    }
+    
+    
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            @foreach (var obj in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" scr="@obj.URL" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Evenement 2</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                        <div class="card-body">
+                            <p class="card-text">datum: @obj.EvenementDatum</p>
+                            <p class="card-text">@obj.Beschrijving</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a asp-action ="Details" asp-route-id="@obj.EvenementId" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a asp-action="Edit" asp-route-id="@obj?.EvenementId" class="btn btn-sm btn-outline-secondary" >Edit</a>
+                                </div>
+                                <small class="text-muted">@obj.Locatie</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+
+    
+
+</main>

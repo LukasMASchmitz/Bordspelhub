@@ -1,4 +1,8 @@
 ﻿@model Bordspelhub.Models.Evenement
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
     ViewData["Title"] = "Create";
@@ -24,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="EvenementDatum" class="control-label"></label>
-                <input asp-for="EvenementDatum" class="form-control" />
+                <input asp-for="EvenementDatum" type="date" class="form-control" />
                 <span asp-validation-for="EvenementDatum" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -32,9 +36,9 @@
                 <input asp-for="URL" class="form-control" />
                 <span asp-validation-for="URL" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none">
                 <label asp-for="Creator" class="control-label"></label>
-                <input asp-for="Creator" class="form-control" />
+                <input asp-for="Creator" value="@UserManager.GetUserName(User)" class="form-control" />
                 <span asp-validation-for="Creator" class="text-danger"></span>
             </div>
             <div class="form-group">
