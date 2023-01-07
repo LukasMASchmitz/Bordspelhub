@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Bordspelhub.Models.Comment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<hr />
+<div class="px-4 py-5 my-5 text-center">
+    <div class="row">
+        <h3>Bedankt voor je bericht</h3>
+    </div>
+    <div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Forums" asp-action="Index">Ga terug</a>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

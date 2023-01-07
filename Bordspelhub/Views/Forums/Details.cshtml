@@ -1,0 +1,72 @@
+﻿@using Bordspelhub.Models
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<main class="container">
+     <div class="px-4 py-5 my-5 text-center">
+        <div class="col-lg-6 mx-auto">
+            <div class="mb-3">
+                <h3>Plaats een bericht:</h3>
+                @using (Html.BeginForm("CreateComment", "Comments", FormMethod.Post))
+                {
+                    <div class="form-group" >
+                        <label for="commentText"></label>
+                        <textarea type="text" name="commentText" style="width:70%" rows="4"></textarea>
+                    </div>
+                    <div class="form-group" style="display:none">
+                        <label for="forumId"></label>
+                        <input type="number" value="@Model.Forums[0].ForumId" name="forumId" />
+                    </div>
+                    <div class="form-group" style="display:none">
+                        <label for="commenter"></label>
+                        <input type="text" value="@UserManager.GetUserName(User)" name="commenter" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary"  value="Plaats" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    @foreach (var obj in Model.Forums)
+    {
+        <div class="card">
+
+            <div class="row">
+                <div class="col-2 text-center align-self-left">
+                    <h5>@obj.Owner</h5>
+                </div>
+                <div class="col-10">
+                    <p>@obj.Onderwerp</p>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (Model.Comments != null)
+    {
+        @foreach (var obj in Model.Comments)
+        {
+            <div class="card">
+
+                    <div class="row">
+                        <div class="col-2 text-center align-self-left">
+                            <h5>@obj.Commenter</h5>
+                        </div>
+                        <div class="col-10">
+                            <p>@obj.CommentText</p>
+                        </div>
+                    </div>
+                </div>
+        }
+    }
+    
+</main>

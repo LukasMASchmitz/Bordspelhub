@@ -290,8 +290,6 @@ C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Bordspelhu
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Humanizer.dll
-C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\MessagePack.dll
-C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\MessagePack.Annotations.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -332,7 +330,6 @@ C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
@@ -560,3 +557,4 @@ C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\obj\Debug\net7.0\refint\Bor
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\obj\Debug\net7.0\Bordspelhub.pdb
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\obj\Debug\net7.0\Bordspelhub.genruntimeconfig.cache
 C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\obj\Debug\net7.0\ref\Bordspelhub.dll
+C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll

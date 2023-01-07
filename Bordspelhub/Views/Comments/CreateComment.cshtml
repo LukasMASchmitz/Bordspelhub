@@ -1,0 +1,57 @@
+﻿@model Bordspelhub.Models.Comment
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Comment</h4>
+<hr />
+<div class="px-4 py-5 my-5 text-center">
+    <div class="col-lg-6 mx-auto">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h3>Weet je zeker dat je dit bericht wilt plaatsen?</h3>
+            <p>@Model.CommentText</p>
+            <div class="form-group" style="display:none">
+                <label asp-for="CommentText" class="control-label h3">Laat een bericht achter:</label>
+                <textarea asp-for="CommentText" value="@Model.CommentText" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="CommentText" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="ForumId" class="control-label"></label>
+                <input asp-for="ForumId" value="@Model.ForumId" class="form-control" />
+                <span asp-validation-for="ForumId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="Commenter" class="control-label"></label>
+                <input asp-for="Commenter" value="@UserManager.GetUserName(User)" class="form-control" />
+                <span asp-validation-for="Commenter" class="text-danger"></span>
+            </div>
+            <div class="form-group d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="submit" value="Create" class="btn btn-primary mb-3">Bevestig versturing</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Bordspelhub.Models.Forum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main background="~/wwwroot/Pics/Back.jpg">
+    <input type="search" class="form-control" id="datatable-search-input" placeholder="Zoek">
+
+
+    <hr class="my-4">
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:right">
+        <div class="col p-4 d-flex flex-column position-static">
+            <h1>Zoekfuncties</h1>
+            <hr class="my-4">
+            <div>
+                <label for="sortop" class="form-label">Sorteren op:</label>
+                <select class="form-select" id="Nieuw naar oud" required="">
+                    <option value="">Populairst</option>
+                    <option>Nieuw naar oud</option>
+                    <option>Oud naar nieuw</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+                <hr class="my-4">
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Zoeken</button>
+
+            </div>
+        </div>
+    </div>
+
+    @foreach (var obj in Model)
+    {
+        <div class="card" style="width:75%">
+
+            <div class="row">
+                <p class="text-secondary">Gesprek gestart door: @obj.Owner</p>
+                <p>@obj.Onderwerp</p>
+                <div class="col-2 offset-10">
+                    <a class="btn btn-secondary" asp-action="Details" asp-route-id="@obj.ForumId">Verder</a>
+                </div>
+            </div>
+        </div>
+    }
+    
+    <p>
+        <a class="btn btn-secondary" asp-action="Create">Start een discussie</a>
+    </p>
+</main>
+

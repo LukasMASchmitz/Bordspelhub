@@ -40,10 +40,27 @@ namespace Bordspelhub.Controllers
             if (forum == null)
             {
                 return NotFound();
-            }
+            } else
+            {
+                dynamic forumInfo = new ForumInfo();
 
-            return View(forum);
+                var forum1 = from f in _context.Forums
+                            where f.ForumId == id
+                            select f;
+
+                var comments = from c in _context.Comments
+                               where c.ForumId == id
+                               select c;
+
+                forumInfo.Forums = await forum1.ToListAsync();
+                if (comments != null)
+                {
+                    forumInfo.Comments = await comments.ToListAsync();
+                }
+                return View(forumInfo);
+            }
         }
+
 
         // GET: Forums/Create
         public IActionResult Create()
@@ -161,7 +178,20 @@ namespace Bordspelhub.Controllers
         }
 
 
-
-        
+        // POST: Comments/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Details([Bind("CommentId,CommentText,Commenter")] Comment comment)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(comment);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(comment);
+        }
     }
 }
