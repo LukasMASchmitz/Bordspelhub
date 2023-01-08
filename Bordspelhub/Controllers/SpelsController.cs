@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bordspelhub.Data;
 using Bordspelhub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bordspelhub.Controllers
 {
@@ -51,13 +52,13 @@ namespace Bordspelhub.Controllers
 
             return View(spel);
         }
-
+        [Authorize]
         // GET: Spels/Create
         public IActionResult Create()
         {
             return View();
         }
-
+        [Authorize]
         // POST: Spels/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -89,7 +90,7 @@ namespace Bordspelhub.Controllers
             }
             return View(spel);
         }
-
+        [Authorize]
         // POST: Spels/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -124,7 +125,7 @@ namespace Bordspelhub.Controllers
             }
             return View(spel);
         }
-
+        [Authorize]
         // GET: Spels/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -142,7 +143,7 @@ namespace Bordspelhub.Controllers
 
             return View(spel);
         }
-
+        [Authorize]
         // POST: Spels/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

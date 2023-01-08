@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bordspelhub.Data;
 using Bordspelhub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bordspelhub.Controllers
 {
@@ -26,7 +27,7 @@ namespace Bordspelhub.Controllers
                           View(await _context.Comments.ToListAsync()) :
                           Problem("Entity set 'BordspelhubContext.Comments'  is null.");
         }
-
+        [Authorize]
         // GET: Comments/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -48,7 +49,7 @@ namespace Bordspelhub.Controllers
 
             return View(await comments.ToListAsync());
         }
-
+        [Authorize]
         // GET: Comments/Create
         [HttpPost]
         public IActionResult CreateComment(string commentText, int forumId, string commenter)
@@ -61,8 +62,8 @@ namespace Bordspelhub.Controllers
             comment.Commenter = commenter;
             return View(comment);
         }
-        
 
+        [Authorize]
 
         // POST: Comments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -79,7 +80,7 @@ namespace Bordspelhub.Controllers
             }
             return View(comment);
         }
-
+        [Authorize]
         // GET: Comments/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -95,7 +96,7 @@ namespace Bordspelhub.Controllers
             }
             return View(comment);
         }
-
+        [Authorize]
         // POST: Comments/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -130,7 +131,7 @@ namespace Bordspelhub.Controllers
             }
             return View(comment);
         }
-
+        [Authorize]
         // GET: Comments/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -148,7 +149,7 @@ namespace Bordspelhub.Controllers
 
             return View(comment);
         }
-
+        [Authorize]
         // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

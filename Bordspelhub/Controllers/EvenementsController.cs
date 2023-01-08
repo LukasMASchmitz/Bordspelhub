@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bordspelhub.Data;
 using Bordspelhub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bordspelhub.Controllers
 {
@@ -45,6 +46,7 @@ namespace Bordspelhub.Controllers
             return View(evenement);
         }
 
+        [Authorize]
         // GET: Evenements/Create
         public IActionResult Create()
         {
@@ -117,7 +119,7 @@ namespace Bordspelhub.Controllers
             }
             return View(evenement);
         }
-
+        [Authorize]
         // GET: Evenements/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -135,7 +137,7 @@ namespace Bordspelhub.Controllers
 
             return View(evenement);
         }
-
+        [Authorize]
         // POST: Evenements/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

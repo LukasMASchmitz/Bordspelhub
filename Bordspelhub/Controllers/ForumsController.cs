@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bordspelhub.Data;
 using Bordspelhub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bordspelhub.Controllers
 {
@@ -26,7 +27,7 @@ namespace Bordspelhub.Controllers
                           View(await _context.Forums.ToListAsync()) :
                           Problem("Entity set 'BordspelhubContext.Forums'  is null.");
         }
-
+        [Authorize]
         // GET: Forums/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -61,13 +62,13 @@ namespace Bordspelhub.Controllers
             }
         }
 
-
+        [Authorize]
         // GET: Forums/Create
         public IActionResult Create()
         {
             return View();
         }
-
+        [Authorize]
         // POST: Forums/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -83,7 +84,7 @@ namespace Bordspelhub.Controllers
             }
             return View(forum);
         }
-
+        [Authorize]
         // GET: Forums/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -99,7 +100,7 @@ namespace Bordspelhub.Controllers
             }
             return View(forum);
         }
-
+        [Authorize]
         // POST: Forums/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -134,7 +135,7 @@ namespace Bordspelhub.Controllers
             }
             return View(forum);
         }
-
+        [Authorize]
         // GET: Forums/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -152,7 +153,7 @@ namespace Bordspelhub.Controllers
 
             return View(forum);
         }
-
+        [Authorize]
         // POST: Forums/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -177,7 +178,7 @@ namespace Bordspelhub.Controllers
           return (_context.Forums?.Any(e => e.ForumId == id)).GetValueOrDefault();
         }
 
-
+        [Authorize]
         // POST: Comments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
