@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Bordspelhub.Models.Spel>
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <body background="~/wwwroot/Pics/Back.jpg">
@@ -29,7 +30,7 @@
     </div>    
 
 
-@for (int i = 0; i < 5; i++)
+@foreach (var obj in Model)
 {
 
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-2 position-relative" style="float:left;width:70%">
@@ -38,10 +39,10 @@
 
         </div>
         <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">Spelnaam</h3>
-            <div class="mb-1 text-muted">Datum uitgekomen</div>
-            <p class="mb-auto">Beschrijving Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-            <a href="#" class="stretched-link">Meer info</a>
+                <h3 class="mb-0">@Html.DisplayFor(modelItem => obj.SpelNaam)</h3>
+                <div class="mb-1 text-muted">Pegi: @Html.DisplayFor(modelItem => obj.Pegi)</div>
+                <p class="mb-auto">@Html.DisplayFor(modelItem => obj.Beschrijving)</p>
+                <a asp-action="Details" asp-route-id="@obj.SpelId" class="btn btn-sm btn-outline-secondary">Meer info</a>
         </div>
         
     </div>

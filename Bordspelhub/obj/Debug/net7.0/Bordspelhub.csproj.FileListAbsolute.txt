@@ -7,8 +7,6 @@ C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Bordspelhub.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Bordspelhub.pdb
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Humanizer.dll
-C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\MessagePack.dll
-C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\MessagePack.Annotations.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.Build.dll
@@ -30,7 +28,6 @@ C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
-C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
@@ -837,3 +834,8 @@ C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub
 C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub\obj\Debug\net7.0\Bordspelhub.pdb
 C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub\obj\Debug\net7.0\Bordspelhub.genruntimeconfig.cache
 C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub\obj\Debug\net7.0\ref\Bordspelhub.dll
+C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\lukas\OneDrive\Bureaublad\Zuyd\Bordspelhub\Bordspelhub\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll

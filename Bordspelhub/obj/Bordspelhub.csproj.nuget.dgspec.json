@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
+    "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
+    "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
         "projectName": "Bordspelhub",
-        "projectPath": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
-        "packagesPath": "C:\\Users\\dierx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\obj\\",
+        "projectPath": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukas\\OneDrive\\Bureaublad\\Zuyd\\Bordspelhub\\Bordspelhub\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dierx\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -8,9 +8,9 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Spel toevoegen</h1>
 
-<h4>Spel</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -41,15 +41,16 @@
                 <input asp-for="Beschrijving" class="form-control" />
                 <span asp-validation-for="Beschrijving" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Toevoegen" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
+<br />
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Terug naar alle spellen</a>
 </div>
 
 @section Scripts {

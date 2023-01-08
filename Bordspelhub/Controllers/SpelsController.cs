@@ -27,6 +27,13 @@ namespace Bordspelhub.Controllers
                           Problem("Entity set 'BordspelhubContext.Spellen'  is null.");
         }
 
+        public async Task<IActionResult> Zoek()
+        {
+            return _context.Spellen != null ?
+                        View(await _context.Spellen.ToListAsync()) :
+                        Problem("Entity set 'BordspelhubContext.Spellen'  is null.");
+        }
+
         // GET: Spels/Details/5
         public async Task<IActionResult> Details(int? id)
         {
