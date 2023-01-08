@@ -1,0 +1,57 @@
+﻿@model Bordspelhub.Models.Spel
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Spel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SpelNaam" class="control-label"></label>
+                <input asp-for="SpelNaam" class="form-control" />
+                <span asp-validation-for="SpelNaam" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none">
+                <label asp-for="Gebruiker" class="control-label"></label>
+                <input asp-for="Gebruiker" value="@UserManager.GetUserName(User)" class="form-control" />
+                <span asp-validation-for="Gebruiker" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categorie" class="control-label"></label>
+                <input asp-for="Categorie" class="form-control" />
+                <span asp-validation-for="Categorie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pegi" class="control-label"></label>
+                <input asp-for="Pegi" class="form-control" />
+                <span asp-validation-for="Pegi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Beschrijving" class="control-label"></label>
+                <input asp-for="Beschrijving" class="form-control" />
+                <span asp-validation-for="Beschrijving" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
