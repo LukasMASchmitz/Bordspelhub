@@ -9,165 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bordspelhub
 build_property.RootNamespace = Bordspelhub
-build_property.ProjectDir = C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub\
+build_property.ProjectDir = C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Pepijn\Source\Repos\Bordspelhub\Bordspelhub
+build_property.MSBuildProjectDirectory = C:\Users\dierx\OneDrive\Documenten\Zuyd\Leerjaar 2\Casus\Bordspelhub\Bordspelhub
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/Create.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/CreateComment.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/CreateComment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcQ3JlYXRlQ29tbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/Delete.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/Details.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/Edit.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Comments/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Comments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Evenements/Create.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Evenements/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbmVtZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Evenements/Delete.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Evenements/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbmVtZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Evenements/Details.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Evenements/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbmVtZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Evenements/Edit.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Evenements/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbmVtZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Evenements/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Evenements/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbmVtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Event/Eventt.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Event/Eventt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRXZlbnR0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Event/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Event/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forums/Create.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forums/Delete.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forums/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forums/Details.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forums/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forums/Edit.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forums/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forums/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forum/Forum.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forum/Forum.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cRm9ydW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Forum/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Forum/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Index.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Privacy.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Spel.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Spel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Spellen.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Spellen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGVsbGVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Spelt.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Spelt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Home/Zoek.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Home/Zoek.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxab2VrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Shared/Error.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/_ViewImports.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/_ViewStart.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Shared/_Layout.cshtml]
+[C:/Users/dierx/OneDrive/Documenten/Zuyd/Leerjaar 2/Casus/Bordspelhub/Bordspelhub/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y6vdxu58w4

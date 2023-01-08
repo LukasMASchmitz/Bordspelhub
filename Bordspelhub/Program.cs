@@ -11,6 +11,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Swagger For API
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,3 +37,7 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
+//Swagger For API
+app.UseSwagger();
+app.UseSwaggerUI();

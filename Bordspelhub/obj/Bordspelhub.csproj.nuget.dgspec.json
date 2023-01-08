@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
+    "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
+    "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "projectUniqueName": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
         "projectName": "Bordspelhub",
-        "projectPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
-        "packagesPath": "C:\\Users\\Pepijn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pepijn\\Source\\Repos\\Bordspelhub\\Bordspelhub\\obj\\",
+        "projectPath": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\Bordspelhub.csproj",
+        "packagesPath": "C:\\Users\\dierx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dierx\\OneDrive\\Documenten\\Zuyd\\Leerjaar 2\\Casus\\Bordspelhub\\Bordspelhub\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Pepijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dierx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,6 +70,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
