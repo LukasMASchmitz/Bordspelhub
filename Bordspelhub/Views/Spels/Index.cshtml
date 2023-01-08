@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Bordspelhub.Models.Spel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<main>
+@foreach (var obj in Model)
+    {
+        <div class="card" style="margin-top:2%">
+
+            <div class="row">
+                <div class="col-3 text-center align-self-center">
+                    <img class="img-fluid" src="https://i.imgur.com/7a9V4yw.png">
+                </div>
+                <div class="col-7">
+                    <div class="row title">
+                        <div class="col">
+                            <h2>@Html.DisplayFor(modelItem => obj.SpelNaam)</h2>
+                        </div>
+                        <div class="col text-right">
+                            <p>aangemaakt door: @Html.DisplayFor(modelItem => obj.Gebruiker)</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>@Html.DisplayFor(modelItem => obj.Beschrijving)</p>
+                            <p>Categorie: @Html.DisplayFor(modelItem => obj.Categorie)</p>
+                            <p>Minimale leeftijd: @Html.DisplayFor(modelItem => obj.Pegi)</p>
+                        </div>
+                        <div class="col-3">
+                            <div class="btn-group" style="margin-top:90%">
+                                    <a asp-action ="Details" asp-route-id="@obj.SpelId" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a asp-action="Edit" asp-route-id="@obj?.SpelId" class="btn btn-sm btn-outline-secondary" >Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    
+</main>
+

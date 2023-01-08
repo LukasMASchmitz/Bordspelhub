@@ -160,6 +160,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Spels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Spels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Spels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Spels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/Spels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pepijn/Source/Repos/Bordspelhub/Bordspelhub/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
